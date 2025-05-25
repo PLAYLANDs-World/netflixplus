@@ -1,0 +1,39 @@
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.prime-logo {
+    width: 40px;
+    margin-left: 12px;
+}
+
+.smoke-effect-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(-1, -1);
+    background:
+        linear-gradient(to top, rgba(0, 0, 0, 1) 15%, transparent 100%),
+        url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+}
+
+.net-user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 0.2rem;
+    margin-right: 15px;
+}

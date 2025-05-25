@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+
+}
+
+.hero-section {
+    width: 100%;
+    height: 35vh;
+    padding-top: 41.6667%;
+    background: linear-gradient(to top, #000000 10%, transparent 90%),
+        url('https://image.tmdb.org/t/p/original/nOc10mbFKxWxJ6OzjoivSF3q4wu.jpg') no-repeat center center/cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.2) 60%);
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    margin-top: 10rem;
+    padding: 0 20px;
+    z-index: 2;
+    padding-bottom: 5rem;
+}
+
+.smoke-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(to top, rgba(0, 0, 0, 0.9) 10%, transparent 90%),
+        url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+}
+
+.movies-details {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+}
+
+.movies-logo img {
+    width: 120px;
+    height: 30px;
+    margin-top: -10px;
+}
+
+.movies-poster img {
+    width: 105px;
+    height: 150px;
+    border-radius: 0.4rem;
+}
+
+.movies-info {
+    margin-left: 20px;
+    color: white;
+}
+
+.movies-info p {
+    font-size: 0.65rem;
+}
+
+
+.movies-info-rate {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.imdb-logo {
+    margin: 0.4rem 0;
+    padding: 0.2rem 0.32rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    background: white;
+    font-size: 0.7rem;
+    color: black;
+    width: fit-content;
+}
+
+.rated-r {
+    margin: 0.4rem 0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    background: rgb(220, 0, 0);
+    font-size: 0.7rem;
+    color: white;
+    width: fit-content;
+}
+
+.rated-pg13 {
+    margin: 0.4rem 0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    background: rgb(255, 153, 0);
+    font-size: 0.7rem;
+    color: white;
+    width: fit-content;
+}
+
+.rated-g {
+    margin: 0.4rem 0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    background: rgb(0, 153, 0);
+    font-size: 0.7rem;
+    color: white;
+    width: fit-content;
+}
+
+.rated-pg {
+    margin: 0.4rem 0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    background: rgb(255, 204, 0);
+    font-size: 0.7rem;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+}
+
+.rated-nc-17 {
+    margin: 0.4rem 0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    background: rgb(153, 0, 153);
+    font-size: 0.7rem;
+    color: white;
+    width: fit-content;
+}
+
+.release-year {
+    margin: 0.4rem 0;
+    padding: 0.2rem 0.32rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    background: white;
+}
+
+.movie-time {
+    margin: 0.4rem 0;
+    padding: 0.2rem 0.32rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    background: white;
+}
+
+.movies-info-genre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3px;
+    gap: 0.4rem;
+}
+
+.genre {
+    margin: 0.4rem 0;
+    padding: 0.25rem 0.7rem;
+    border-radius: 0.4rem;
+    font-weight: bolder;
+    background: rgb(255, 255, 255);
+    font-size: 0.6rem;
+    color: black;
+    width: fit-content;
+}
+
+.movies-buttons {
+    display: flex;
+
+    align-items: center;
+    gap: 20px;
+    margin-top: 0.9rem;
+    margin-bottom: 2.5rem;
+}
+
+.watch-now {
+    display: flex;
+    width: 100%;
+    max-width: 45rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 3rem;
+    border-radius: 0.3rem;
+    background: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+
+.watch-now svg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.7rem;
+}
+
+.watch-now:active {
+    transform: scale(0.989);
+}
+
+.more-movies-detail {
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.more-movies-detail-head {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 0.25rem;
+    border-bottom: solid 2px #000000;
+    width: fit-content;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    margin-top: -22px;
+    margin-bottom: 10px;
+}
+
+
+.content-rating-detail {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+}
+
+
+
+.cast-container {
+    padding: 0.5rem;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.cast-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    gap: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: #9e000000 #3f130d00;
+}
+
+.cast-card {
+    flex: 0 0 135px;
+    background: #ffffff00;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.cast-card:active {
+    transform: scale(0.98);
+    transition: ease-in-out;
+}
+
+.cast-image {
+    width: 100%;
+    height: 155px;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.cast-info {
+    padding: 0.5rem;
+    color: white;
+}
+
+.actor-name {
+    font-weight: bolder;
+    margin-bottom: 0.1rem;
+    font-size: 0.75rem;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.character-name {
+    font-size: 0.55rem;
+    color: #ffffffcc;
+    text-transform: capitalize;
+}
+
+/* Scrollbar styling */
+.cast-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.cast-scroll::-webkit-scrollbar-track {
+    background: #0d253f00;
+}
+
+.cast-scroll::-webkit-scrollbar-thumb {
+    background: #01b3e400;
+    border-radius: 4px;
+}
+
+
+.trailer-more-data {
+    padding: 0.5rem 0;
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.trailer-more-video {
+    flex: 0 0 190px;
+    background: #ffffff00;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    position: relative;
+    /* Add for absolute positioning context */
+}
+
+.trailer-more-video img {
+    width: 175px;
+    height: 95px;
+    border-radius: 0.5rem;
+    display: block;
+    /* Remove default image spacing */
+    margin: 0 auto;
+    /* Center the image */
+}
+
+.trailer-more-video-info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    /* Match image width */
+    padding: 8px 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), transparent);
+    color: white;
+    font-size: 0.5rem;
+    display: grid;
+    border-radius: 0;
+    /* Match image's bottom radius */
+}
+
+.trailer-more-video:active {
+    transform: scale(0.98);
+    transition: ease-in-out;
+}
+
+.trailer-more-video-info-name {
+    font-size: 0.75rem;
+}
+
+/*-----------------------------------------tablate-------------------------------*/
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 13rem;
+    }
+
+    .accordion-header {
+        cursor: none;
+    }
+
+    .notice-content-item {
+        cursor: none;
+    }
+
+    .movies-logo img {
+        margin-top: 15px;
+    }
+}
+
+/*------------------------------------------------windows------------------------------*/
+
+@media (min-width: 992px) {
+    .container {
+        margin-top: 26.5rem;
+    }
+
+    .accordion-header {
+        cursor: pointer;
+    }
+
+    .notice-content-item {
+        cursor: pointer;
+    }
+
+    .movies-logo img {
+        margin-top: 25px;
+    }
+
+    .watch-now {
+        cursor: pointer;
+    }
+
+    .cast-card {
+        cursor: pointer;
+    }
+
+    .trailer-more-video {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,65 @@
+.options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.share-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: none;
+}
+
+.share-btn:active{
+    transform: scale(0.85);
+    transition: transform 0.1s ease-in-out;    
+}
+
+.Reports-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: none;
+}
+
+.Reports-btn:active{
+    transform: scale(0.85);
+    transition: transform 0.1s ease-in-out;    
+}
+
+.Reports-btn svg {
+    align-self: center;
+    color: white;
+    width: 35px;
+    height: 35px;
+}
+
+.share-btn svg {
+    align-self: center;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 768px) {
+    .share-btn {
+        cursor: none;
+    }
+
+    .Reports-btn {
+        cursor: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .share-btn {
+        cursor: pointer;
+    }
+
+    .Reports-btn {
+        cursor: pointer;
+    }
+}
